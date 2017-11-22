@@ -1,0 +1,121 @@
+#login {
+    height: 100vh;
+    background: #efeff4;
+    position: relative;
+}
+
+/* 输入部分 */
+#login .list-block .logo {
+    height: 90px;
+}
+
+#login .list-block>ul {
+    background: #fff;
+}
+
+.list-block>ul>li {
+    padding-left: 10px;
+    border-bottom: 1px solid #efeff4;
+}
+
+.list-block>ul>li .item-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.item-content {
+    position: relative;
+}
+
+.item-content .icon-username,
+.item-content .icon-password,
+.item-content .icon-checkcode {
+    color: #999;
+}
+
+.item-content .item-input {
+    padding-left: .625rem /* 10/16 */;
+    width: 100%;
+}
+
+.item-content .item-input>input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: .875rem /* 14/16 */;
+}
+
+.item-content .item-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.item-content .item-inner .pr-10 {
+    margin-right: 10px;
+}
+
+.item-content .item-inner .icon-eye-copy,
+.item-content .item-inner .icon-biyan {
+    color: rgb(94, 187, 76);
+    cursor: pointer;
+}
+
+.item-content .item-inner .check-code {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -20px;
+}
+
+
+
+
+
+/* 按钮部分 */
+#login .btn-block {
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#login .btn-block>button {
+    padding: .625rem /* 10/16 */;
+    width: 100%;
+    border: 0;
+    border-radius: 3px;
+    font-size: .8125rem /* 13/16 */;
+    background: #0894ec;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 弹出提示 */
+
+#login .bomb-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #666;
+    border-radius: 1rem;
+    color: #fff;
+    
+}
+
+#login .bomb-block>span {
+    display: block;
+    padding: .3125rem .625rem;
+}
+
+#login .bomb-hide {
+    display: none;
+}
+
+

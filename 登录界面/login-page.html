@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login-page.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/shipei.css">
+    <title>登录界面</title>
+</head>
+
+<body>
+    <div id="login">
+        <div class="list-block">
+            <div class="logo">
+                <!-- <img src="/Public/img/logo.png" alt=""> -->
+            </div>
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <label for="login-username">
+                            <div class="iconfont icon-username">
+                            </div>
+                        </label>
+                        <div class="item-input">
+                            <input id="login-username" type="text" name="username" value="" placeholder="手机号/座机号/身份证号">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <label for="login-password">
+                            <div class="iconfont icon-password">
+                            </div>
+                        </label>
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input id="login-password" type="password" name="password" value="" placeholder="请输入6-20位的密码">
+                            </div>
+                            <div class="pr-10 iconfont icon-biyan" id="show-hide">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <label for="login-checkcode">
+                            <div class="iconfont icon-checkcode">
+                            </div>
+                        </label>
+                        <div class="item-inner">
+                            <div class="item-input">
+                                <input id="login-checkcode" type="text" name="check-code" value="" placeholder="验证码">
+                            </div>
+                            <div class="check-code">
+                                <a href="#">
+                                    <img id="login_checkcode_image" src="http://img.ubody.net/verify.php?biztype=login" alt="验证码">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-block">
+            <button id="login-btn">登&nbsp;&nbsp;录</button>
+        </div>
+        <div class="bomb-block bomb-hide">
+            <span>你输入的密码有误</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+    <script src="js/md5-2.1.0.min.js"></script>
+    <script src="js/login-page.js"></script>
+</body>
+
+</html>
